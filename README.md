@@ -1,2 +1,2 @@
 # CarromEagle.github.io
-An Open Source Carrom Game
+*An Open Source Carrom Game*
