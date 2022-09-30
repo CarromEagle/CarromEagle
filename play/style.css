@@ -1,0 +1,9 @@
+#board
+{
+  /* center */
+  margin-top: 50vh;
+  margin-left: 50vw;
+  transform: translate(-50%, -50%);
+
+  background-color: #da3;
+}
