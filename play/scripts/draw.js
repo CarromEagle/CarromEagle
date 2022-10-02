@@ -12,7 +12,7 @@ function drawBoard()
 
 	// STEP-2:: draw the playing area
 	context.fillStyle = "#ffffae";
-	context.fillRect(40, 40, size-95, size-95);
+	context.fillRect(40, 40, size-80, size-80);
 	context.stroke();
 
 
