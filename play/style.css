@@ -1,12 +1,13 @@
 #board
 {
   /* center */
-  margin-top: 49vh;
-  margin-left: 50vw;
-  height: 88vh;
-  width: 88vh;
-  transform: translate(-50%, -50%);
-
+  position: absolute;
+  width: 90vmin;
+  height: 90vmin;
+  top: 50%;
+  left: 50%;
+  margin-top: -45vmin;
+  margin-left: -45vmin;
   background-color: #caa472;
 }
 
