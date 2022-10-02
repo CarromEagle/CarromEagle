@@ -29,5 +29,6 @@ drawBoard();
 // call whenever window is resized
 window.addEventListener('resize', function(event)
 {
+        context.clearRect(40, 40, size-95, size-95);
 	drawBoard();
 }, true);
