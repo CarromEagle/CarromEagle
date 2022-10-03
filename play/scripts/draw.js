@@ -1,14 +1,16 @@
+// get some required variables
 const board = document.getElementById('board');
 const context = board.getContext("2d");
+
 
 /*
 * draws the board step-by-step
 */
 function drawBoard()
 {
-
-	// STEP-1:: clear the context and get the board dimensions
-	var size  = parseInt(getComputedStyle(board).width, 10);
+	// STEP-1:: get the board dimensions and clear the context
+	var size  = board.width;
+	context.clearRect(0, 0, size, size);
 
 	// STEP-2:: draw the playing area
 	context.fillStyle = "#ffffae";
@@ -22,13 +24,5 @@ function drawBoard()
 	// context.fill();
 }
 
-// call first time initially
+// call initially
 drawBoard();
-
-
-// call whenever window is resized
-window.addEventListener('resize', function(event)
-{
-        context.clearRect(40, 40, size-95, size-95);
-	drawBoard();
-}, true);
