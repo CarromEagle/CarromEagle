@@ -19,9 +19,28 @@ function drawBoard()
 
 
 	// STEP-3:: draw pockets
-	// context.fillStyle = "#444";
-	// context.arc(74, 74, 28, 0, 2 * Math.PI, true);
-	// context.fill();
+	context.fillStyle = "#444";
+	
+	// top-right
+	context.beginPath()
+	context.arc(size-68, 68, 28, 0, 2 * Math.PI, true);
+	context.fill();
+
+	// bottom-left
+	context.beginPath()
+	context.arc(68, size-68, 28, 0, 2 * Math.PI, true);
+	context.fill();
+	
+	// top-left
+	context.beginPath()
+	context.arc(68, 68, 28, 0, 2 * Math.PI, true);
+	context.fill();
+
+	// bottom-right
+	context.beginPath()
+	context.arc(size-68, size-68, 28, 0, 2 * Math.PI, true);
+	context.fill();
+
 }
 
 // call initially
